@@ -6,10 +6,7 @@ volumes:
 
 services:
   django:
-    build:
-      context: .
-      dockerfile: ./compose/local/django/Dockerfile
-    image: app_local_django
+    image: shevchenkoigor/app:latest
     depends_on:
       - postgres
     volumes:
