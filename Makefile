@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 COMPOSE_FILE?=local.yml
-DOCKER_FILE=compose/local/local/django/Dockerfile
+DOCKER_FILE=compose/local/django/Dockerfile
 REPO=shevchenkoigor/app
 TAG?=latest
 
