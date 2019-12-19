@@ -81,9 +81,43 @@ The following details how to deploy this application.
 Docker
 ^^^^^^
 
-See detailed `cookiecutter-django Docker documentation`_.
-
-.. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
+make up
 
 
+API
+----------
 
+Auth
+^^^^^^
+
+We'll create an initial user named admin with a password of password123.
+cd <home project> && make user_admin
+
+
+Create
+^^^^^^
+
+go to http://0.0.0.0:8000/api/ fill in and submit the form
+
+Retrieve
+^^^^^^
+
+go to http://0.0.0.0:8000/api/1/
+go to http://0.0.0.0:8000/api/test/1/
+
+Update
+^^^^^^
+
+go to http://0.0.0.0:8000/api/1/ fill in and submit the form
+
+
+Destroy
+^^^^^^
+
+go to http://0.0.0.0:8000/api/1/ and click DELETE
+
+
+List
+^^^^^^
+
+go to http://0.0.0.0:8000/api/

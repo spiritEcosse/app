@@ -33,3 +33,6 @@ commit:
 	git branch --set-upstream-to=origin/`git rev-parse --abbrev-ref HEAD` `git rev-parse --abbrev-ref HEAD` && \
 	docker build -t ${REPO}:${TAG} -f ${DOCKER_FILE} . && \
 	docker push ${REPO}:${TAG}
+
+user_admin:
+	docker-compose -f ${COMPOSE_FILE} run --rm django python manage.py createsuperuser --email admin@example.com --username admin

@@ -9,6 +9,7 @@ from app.api import views
 
 router = routers.DefaultRouter()
 router.register(r'api', views.AppViewSet)
+router.register(r'api/test', views.AppDetailView)
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),

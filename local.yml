@@ -7,6 +7,7 @@ volumes:
 services:
   django:
     image: shevchenkoigor/app:latest
+    restart: always
     depends_on:
       - postgres
     volumes:
