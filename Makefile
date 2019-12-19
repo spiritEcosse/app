@@ -17,13 +17,13 @@ up_hard:
 	&& docker-compose up --build
 
 ipython:
-	docker-compose -f ${COMPOSE_FILE} run --rm app ipython
+	docker-compose -f ${COMPOSE_FILE} run --rm django ipython
 
 ipython_exec:
-	docker-compose -f ${COMPOSE_FILE} exec app ipython
+	docker-compose -f ${COMPOSE_FILE} exec django ipython
 
-app_bash_exec:
-	docker-compose -f ${COMPOSE_FILE} exec app bash
+django_bash_exec:
+	docker-compose -f ${COMPOSE_FILE} exec django sh
 
 commit:
 	git remote show origin && \
