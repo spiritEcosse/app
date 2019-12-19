@@ -36,3 +36,4 @@ commit:
 
 user_admin:
 	docker-compose -f ${COMPOSE_FILE} run --rm django python manage.py createsuperuser --email admin@example.com --username admin
+
